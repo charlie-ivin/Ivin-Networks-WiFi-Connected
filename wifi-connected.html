@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ivin Networks Wi-Fi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    color:white;
+    overflow:hidden;
+    background:#090b15;
+}
+
+/* Background */
+
+body::before{
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+        radial-gradient(circle at left top,#3b2d86 0%,transparent 30%),
+        radial-gradient(circle at right center,#00495c 0%,transparent 35%),
+        linear-gradient(90deg,#15142b,#09121a);
+
+    z-index:-2;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.15);
+    z-index:-1;
+}
+
+/* Top Bar */
+
+header{
+
+    height:70px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:rgba(0,0,0,.35);
+
+    backdrop-filter:blur(15px);
+
+    font-weight:700;
+
+    font-size:24px;
+
+}
+
+/* Main */
+
+main{
+
+    min-height:calc(100vh - 70px);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+
+}
+
+.container{
+
+    max-width:900px;
+
+}
+
+.status{
+
+    display:inline-block;
+
+    background:rgba(71,255,129,.15);
+
+    border:1px solid rgba(71,255,129,.4);
+
+    color:#75ff9c;
+
+    padding:10px 22px;
+
+    border-radius:100px;
+
+    font-size:15px;
+
+    margin-bottom:30px;
+
+}
+
+h1{
+
+    font-size:76px;
+
+    font-weight:800;
+
+    line-height:1.1;
+
+    margin-bottom:25px;
+
+}
+
+.gradient{
+
+    background:linear-gradient(90deg,#c6efff,#77baff,#7d71ff);
+
+    -webkit-background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+}
+
+.subtitle{
+
+    font-size:34px;
+
+    font-weight:700;
+
+    margin-bottom:30px;
+
+    color:#f2f2f2;
+
+}
+
+.description{
+
+    color:#a7b0c0;
+
+    font-size:22px;
+
+    line-height:1.8;
+
+    max-width:760px;
+
+    margin:auto;
+
+}
+
+.buttons{
+
+    margin-top:50px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+    padding:18px 40px;
+
+    border-radius:14px;
+
+    font-size:18px;
+
+    font-weight:700;
+
+    color:white;
+
+    background:linear-gradient(90deg,#58a8ff,#7c73ff);
+
+    transition:.3s;
+
+    box-shadow:0 10px 30px rgba(87,148,255,.35);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 18px 40px rgba(87,148,255,.5);
+
+}
+
+.footer{
+
+    margin-top:60px;
+
+    color:#8b95a8;
+
+    font-size:17px;
+
+}
+
+@media(max-width:768px){
+
+h1{
+
+font-size:48px;
+
+}
+
+.subtitle{
+
+font-size:26px;
+
+}
+
+.description{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+Ivin Networks
+
+</header>
+
+<main>
+
+<div class="container">
+
+<div class="status">
+✓ Successfully Connected
+</div>
+
+<h1>
+You are now <span class="gradient">Connected</span>
+</h1>
+
+<div class="subtitle">
+Thank you for using an Ivin Networks Wi-Fi service.
+</div>
+
+<div class="description">
+Enjoy fast, secure and reliable internet throughout your visit.
+If you experience any issues connecting or using the network,
+our support team is ready to help.
+</div>
+
+<div class="buttons">
+
+<a href="https://www.ivinnetworks.co.uk/contact-us" class="btn">
+Support Here
+</a>
+
+</div>
+
+<div class="footer">
+Wi-Fi managed by <strong>Ivin Networks</strong>
+</div>
+
+</div>
+
+</main>
+
+</body>
+</html>
